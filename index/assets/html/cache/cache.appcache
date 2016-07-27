@@ -3,3 +3,9 @@ CACHE MANIFEST
 
 #需要缓存的文件
 CACHE:
+http://placehold.it/350x150
+
+NETWORK:
+*
+
+FALLBACK:

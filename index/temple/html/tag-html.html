@@ -4,16 +4,19 @@
 <!-- lang属性对于程序来说，没有也别的用处。但是它可以告诉浏览器、搜索引擎、一些处理HTML的程序来做对应的一些事情。 -->
 <!-- html元素是一个HTML文档最外边的元素，也被叫做根元素 -->
 <!-- html5中存在新标签manifest，定义一个 URL，在这个URL上描述了文档的缓存信息-->
-<html lang="en" manifest='../../assets/html/cache/cache.manifest'>
+
+<!-- 
+manifest 文件的建议的文件扩展名是：".appcache"。
+请注意，manifest 文件需要配置正确的 MIME-type，即 "text/cache-manifest"。必须在 web 服务器上进行配置。 
+-->
+<html lang="en" manifest='../../assets/html/cache/cache.appcache'>
 
 <head>
     <meta charset="UTF-8">
-    <title>introduction</title>
+    <title>tag-html</title>
 </head>
 
 <body>
-    <pre>
-	&lt;html lang="en"&gt; 
-		</pre>
+<img src="http://placehold.it/350x150" alt="350*150">
 </body>
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "From zero to learn web. ## Index - HTML",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TongSiwei/web.git"
+  },
+  "author": "tongsiwei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TongSiwei/web/issues"
+  },
+  "homepage": "https://github.com/TongSiwei/web#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
