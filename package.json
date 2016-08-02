@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/TongSiwei/web#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "bootstrap3": "^3.3.5",
+    "express": "^4.14.0",
+    "jquery": "^3.1.0"
   }
 }
