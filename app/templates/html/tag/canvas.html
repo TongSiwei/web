@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;canvas&gt;</title>
+    <base href="../../../assets/html/" />
+    <base target="_blank" />
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <h1>入门用法：</h1>
+    <!-- <canvas>的宽高必须要在标签属性里面设置 -->
+    <canvas id="canvas1" width="100px" height="100px"></canvas>
+    <p>canvas的宽高假如没有设置则默认为300*150，实际图形则会被按比例压缩</p>
+    <p>图形宽为：style设置的宽(100) * fillRect的宽(100) / canvas的宽(300) = 33.33</p>
+    <p>图形宽为：style设置的高(100) * fillRect的高(100) / canvas的高(150) = 66.67</p>
+    <!-- 可以理解为fillRect是按比例绘制，非实际尺寸 -->
+    <p>如图：</p>
+    <canvas id="canvas2"></canvas>
+    <br/>
+    <p>
+        参考：
+        <a href="http://www.w3school.com.cn/tags/html_ref_canvas.asp">HTML 5 Canvas 参考手册</a>
+        <a href="https://developer.mozilla.org/cn/Canvas_tutorial">Mozilla  Canvas 教程</a>
+    </p>
+</body>
+<style>
+#canvas2 {
+    width: 100px;
+    height: 100px;
+}
+</style>
+<script>
+var DomCanvas1 = document.getElementById('canvas1');
+var DomCanvas2 = document.getElementById('canvas2');
+// getContext() 方法返回一个用于在画布上绘图的环境。
+// 当前唯一的合法值是 "2d"
+var ctx1 = DomCanvas1.getContext('2d');
+var ctx2 = DomCanvas2.getContext('2d');
+
+ctx1.fillStyle = '#FF0000';
+ctx1.fillRect(0, 0, 100, 100);
+
+ctx2.fillStyle = '#FF0000';
+ctx2.fillRect(0, 0, 100, 100);
+</script>
+
+</html>

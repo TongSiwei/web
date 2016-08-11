@@ -1,7 +1,9 @@
-  body{
-        padding: 1%;
-        text-align: center;
-    }
-    strong{
-        color: red;
-    }
+  body {
+      padding: 1%;
+      text-align: center;
+      font-family: microsoft yahei light;
+  }
+  
+  strong {
+      color: red;
+  }
