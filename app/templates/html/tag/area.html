@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>area</title>
+</head>
+
+<!-- 
+
+href    URL 定义此区域的目标 URL。
+nohref  nohref  从图像映射排除某个区域。
+target  _blank/_parent/_self/_top 规定在何处打开 href 属性指定的目标 URL。 
+
+shape   圆形（circ 或 circle）     对应    coords属性设置值为两个参数分别为圆心的横,纵坐标,第三个参数为半径
+shape   多边形（poly 或 polygon）  对应    coords属性设置值为多边形各项顶点的坐标值
+shape   矩形（rect 或 rectangle）  对应    coords属性设置值为矩形的左上角,右下角的坐标
+
+-->
+
+<body>
+    <h1>点击绿色色块可以看到效果</h1>
+    <img src="../../../assets/html/img/service-flow.png" alt="办理流程" usemap="#service" />
+    <map name="service" id="service" >
+        <area shape="rect" coords="0,0,112,38" href="#" alt="text1">
+        <area shape="rect" coords="482,25,594,63" href="#" alt="text2">
+        <area shape="rect" coords="730,171,841,209" href="#" alt="text3">
+        <area shape="poly" coords="0,150,40,80,80,150,65,200,15,200" href="#" alt="text4">
+    </map>
+    <p> &lt;map&gt; 与 &lt;area&gt; 的组合， <strong>更适合热点形状必须为多变型的情况</strong></p>
+    <p>可以尝试点击上图右箭头图标，可以看到多边形效果，除了多边形区域其余区域不能够点击</p>
+    
+</body>
+<style>
+    body{
+        padding: 1%;
+        text-align: center;
+    }
+    strong{
+        color: red;
+    }
+
+</style>
+
+</html>
