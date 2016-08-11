@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;base&gt;</title>
+    <!-- <base> 标签必须位于 head 元素内部。 -->
+    <base href="../../../assets/html/" />
+    <base target="_blank" />
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <p>url以 " http:// " 开头的链接 直接请求</p>
+    <p>因为&lt;base&gt;规定了 <code>target="_blank"</code> 所以跳转方式为新窗口</p>
+    <p>例如：<a href="http://haoduoroubaozi.com">好多肉包子</a></p>
+    <br/>
+    <br/>
+    <br/>
+    <p>url不以http://开头的链接 在&lt;base&gt;标签的基础上拼接链接再请求</p>
+    <p>(此图片属性src="img/placeholder.png")</p>
+    <img src="img/placeholder.png" alt="placeholder">
+</body>
+</html>

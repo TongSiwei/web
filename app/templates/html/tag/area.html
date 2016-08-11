@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>area</title>
+    <title>&lt;map&gt; & &lt;area&gt;</title>
+    <base href="../../../assets/html/" />
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
 <!-- 
@@ -20,7 +22,7 @@ shape   矩形（rect 或 rectangle）  对应    coords属性设置值为矩形
 
 <body>
     <h1>点击绿色色块可以看到效果</h1>
-    <img src="../../../assets/html/img/service-flow.png" alt="办理流程" usemap="#service" />
+    <img src="img/service-flow.png" alt="办理流程" usemap="#service" />
     <map name="service" id="service" >
         <area shape="rect" coords="0,0,112,38" href="#" alt="text1">
         <area shape="rect" coords="482,25,594,63" href="#" alt="text2">
@@ -31,15 +33,4 @@ shape   矩形（rect 或 rectangle）  对应    coords属性设置值为矩形
     <p>可以尝试点击上图右箭头图标，可以看到多边形效果，除了多边形区域其余区域不能够点击</p>
     
 </body>
-<style>
-    body{
-        padding: 1%;
-        text-align: center;
-    }
-    strong{
-        color: red;
-    }
-
-</style>
-
 </html>
