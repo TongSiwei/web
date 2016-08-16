@@ -1,0 +1,30 @@
+body {
+    padding: 1%;
+    text-align: center;
+    font-family: microsoft yahei light;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+strong {
+    color: red;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-right: 1px solid #804040;
+    border-bottom: 1px solid #804040;
+    /*消除单元格间隙*/
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #eee;
+}
+
+table td {
+    padding: 6px 12px;
+    border-left: 1px solid #804040;
+    border-top: 1px solid #804040;
+}
