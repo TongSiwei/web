@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;datalist&gt;</title>
+    <base href="../../../assets/" />
+    <base target="_blank" />
+</head>
+
+<body>
+    <p>&lt;datalist&gt;是HTML5的新标签，safari与IE10及以下是不能使用的。</p>
+    <input type="text" id="friends" list="friendsList" placeholder="路飞的伙伴">
+    <datalist id="friendsList">
+        <option value="索隆"></option>
+        <option value="娜美"></option>
+        <option value="乌索普"></option>
+    </datalist>
+    <br/>
+    <p>由于样式不能自定义，所以无法实用。</p>
+    <input type="email" class="input inputMailList" name="email" placeholder="请输入邮箱" required autofocus autocomplete="off">
+</body>
+<style>
+.emailist {
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    list-style-type: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.emailist li {
+    padding: 2px 11px;
+    cursor: pointer;
+}
+
+.emailist .on,
+.emailist li:hover {
+    background-color: #eee;
+}
+</style>
+
+<script type="text/javascript" src="base/js/jquery.min.js"></script>
+<script type="text/javascript" src="html/js/jquery.mailAutoComplete-4.0.js"></script>
+<script>
+    $(".inputMailList").mailAutoComplete();
+</script>
+</html>
