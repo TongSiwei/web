@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>&lt;embed&gt;</title>
+    <base href="../../../assets/" />
+    <base target="_blank" />
+    <link rel="stylesheet" href="base/css/base.css">
 </head>
+
 <body>
-    
+    <p>&lt;embed&gt;标签是 HTML 5 中的新标签。</p>
+    <p>图片（图片应使用&lt;img&gt;标签）：
+        <embed class="img" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" />
+    </p>
+    <!-- autostart自动开始 true/false-->
+    <!-- loop循环true/false/n-->
+    <!-- hidden面板显示与否-->
+    <!-- starttime开始时间，未定义则从文件开头播放-->
+    <!-- volume音量大小-->
+    <!-- width height-->
+    <!-- console面板外观设置console、smallconsole、playbutton、pausebutton、stopbutton、volumelever-->
+    <p>音乐：
+        <embed src="http://oayr6ov71.bkt.clouddn.com/little%20lucky.mp3" autostart="true" loop="true" />
+    </p>
+    <p>embed的结构居然是嵌套了一个html标签</p>
+    <p><img src="html/img/embed.png" alt="embed.png"></p>
+    <p>
+        embed可以插入网页
+        <embed class="page" src="http://www.w3school.com.cn/tags/tag_embed.asp">
+    </p>
 </body>
+<style>
+.img {
+    width: 500px;
+}
+
+.page {
+    width: 100%;
+    height: 800px;
+}
+</style>
+
 </html>
