@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>output</title>
+</head>
+<body>
+	<!-- oninput 事件在用户输入时触发JavaScript。 -->
+	<form oninput="x.value = parseInt(a.value) + parseInt(b.value)" >
+		0
+		<input type="range" id="a" min="0" max="100" step="10">
+		100+
+		<input type="number" id="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+	</form>
+</body>
+</html>
