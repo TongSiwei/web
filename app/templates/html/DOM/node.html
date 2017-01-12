@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nodeType&nodeName&nodeValue</title>
+</head>
+<body>
+	<div id="one">
+		div
+	</div>
+</body>
+</html>
+<script>
+	// 获取元素节点
+	var elementNode = document.getElementById('one'); 
+	// 获取属性节点
+	var attributeNode = elementNode.getAttributeNode('id');
+	// 获取文本节点
+	var textNode = elementNode.firstChild;
+	
+	getDomNodeInfo(elementNode, 'elementNode');
+	getDomNodeInfo(attributeNode, 'attributeNode');
+	getDomNodeInfo(textNode, 'textNode');
+	function getDomNodeInfo(dom, label) {
+		console.log(label + ' nodeType is '+ dom.nodeType + '; nodeName is ' + dom.nodeName + '; nodeValue is ' + dom.nodeValue);
+	}
+</script>
