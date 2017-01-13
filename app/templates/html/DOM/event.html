@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+</head>
+<body>
+<script>
+	// 创建节点只在document上创建，先创建再操作
+	var div = document.createElement('div');
+	var id = document.createAttribute('id');
+	var text = document.createTextNode('text content');
+
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(div);
+	div.appendChild(text);
+	div.innerHtml=text;
+	div.setAttribute('class','new-class');
+	// getElementById()	返回带有指定 ID 的元素。
+	// getElementsByTagName()	返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。
+	// getElementsByClassName()	返回包含带有指定类名的所有元素的节点列表。
+</script>
+</body>
+</html>
+

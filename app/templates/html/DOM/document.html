@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实例</title>
+</head>
+<body>
+	<div>
+		<code>document.URL</code>
+		<a id="get-url">获取链接</a>
+	</div>
+
+	<div>
+		<h2>Summary</h2>
+		<div>
+			<code>node.innerHTML = ''</code>
+			<p>1.innerHTML 的 HTML 为大写</p>
+			<p>2.innerHTML 为节点属性，非方法</p>
+		</div>
+	</div>
+</body>
+<script>
+	var getUrl = document.getElementById('get-url');
+	
+	getUrl.onclick = function(){
+		var spanElement = document.createElement('span');
+		this.parentNode.appendChild(spanElement);
+		spanElement.innerHTML = document.URL;
+	}
+</script>
+</html>
