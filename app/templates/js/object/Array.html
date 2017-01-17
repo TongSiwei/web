@@ -5,6 +5,39 @@
 	<title>Array</title>
 </head>
 <body>
+<div>
+</div>
 	
 </body>
+<script>
+	var a = [1,2];
+	var b = [3,4];
+	var c = a.concat(b);
+
+	console.log(c);
+
+	var d = new Array([1,2,3,4,5]);
+	//object的方法 
+	console.log('c.toString() is : ' + c.toString());
+	console.log('c.toLocaleString() is : ' + c.toLocaleString());
+	//已废弃
+	//console.log('d.toSource() is' + d.toSource());
+	
+	//join()数组分割符号替换
+	console.log("c.join(' ') is : " + c.join(' '));
+	//pop返回的是数组最后一个元素
+	console.log("c.pop() is : " + c.pop());
+	//push返回的是数组的长度
+	console.log("c.push(7,8,9) is : " + c.push(7,8,9));
+	
+	console.log("c.shift() is : " + c.shift());
+	console.log("c.unshift(99) is : " + c.unshift(99));
+	//获取指定位置数组,不改变原始数组
+	console.log("c.slice(1,2) is : " + c.slice(1,2));
+	//删除或添加数组，改变原始数组
+	console.log("c.splice() is : " + c.splice(2));
+	//返回数组原始值
+	console.log("c.valueOf() is : " + c.valueOf());
+</script>
+
 </html>
