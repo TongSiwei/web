@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>try&cat</title>
+</head>
+
+<body>
+</body>
+<button id="b1">try&catch</button>
+
+<p>请输入 5 到 10 之间的数字：</p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">测试输入值</button>
+<p id="mess"></p>
+
+</html>
+<script>
+document.getElementById('b1').onclick = message;
+
+function message() {
+    try {
+        // 由于语句错误被捕获，于是执行catch语句
+        aalert("Welcome guest!")
+    } catch (err) {
+        txt = "本页中存在错误。\n\n"
+        txt += "错误描述：" + err.description + "\n\n"
+        txt += "点击“确定”继续。\n\n"
+        alert(txt)
+    }
+}
+
+function myFunction() {
+    try {
+    	// 自定义错误信息
+        var x = document.getElementById("demo").value;
+        if (x == "") throw "值为空";
+        if (isNaN(x)) throw "不是数字";
+        if (x > 10) throw "太大";
+        if (x < 5) throw "太小";
+    } catch (err) {
+        var y = document.getElementById("mess");
+        y.innerHTML = "错误：" + err + "。";
+    }
+}
+</script>

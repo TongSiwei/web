@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>prototype</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+var s = {
+    'name': 'tong',
+    'sex': 'male'
+}
+if (typeof Object.beget !== 'function') {
+    Object.create = function(o) {
+        var F = function() {};
+        F.prototype = o;
+        return new F();
+    }
+}
+var another_s = Object.create(s);
+s.age = 12;
+console.log(another_s.age);
+</script>
