@@ -1,0 +1,60 @@
+一、兼容性问题
+1.浏览器之间默认的margin padding不尽相同，所以添加全局样式 *{margin:0; padding:0}
+2.图片会有间距，所以可以 1){font-size:0}; 2){float:left}
+3.css透明度 ie{ filter:alpha(opacity=0) } 或者 {opcity:0}
+
+二、元素居中
+1.{display:block; width:100px; margin:0 auto;}
+2.{width:100px; positon:relative; left:50%; margin-left:-50px;}
+
+三、跨域问题
+JS的同源策略就是域名,端口,协议相同，否则不能请求
+1.JSONP:JSONP只支持GET请求而不支持POST;
+2.CORS 后端增加response头信息Access-Control-Allow-Origin, 且必须指定域名；
+		.Ajax{ withCredentials:true };
+
+四、闭包问题
+因为JS有全局作用域和局部作用域，局部可以访问全局，全局无法访问局部。
+闭包就是能够读取其他函数内部变量的函数。
+var action = function(status){
+    return {
+        getStatus: function(){
+            return status;
+        }
+    }
+}
+
+五、CSS Flex 相关
+弹性布局，可以很好的完成居中，主要是通过 justify-content align-item属性来设置
+有flex-start flex-end等值可以选择
+
+六、对于数组
+array 有contact合并，有join以制定分隔符创建字符;
+splice 对原数组进行修改splice(index,howmany,item);
+slice 选取数组中的部分元素 slice(startIndex,endIndex不被选中);
+
+七、HTTP 协议、代理、CORS
+
+八、框架类库、组件的使用场景、优劣、Best Practice
+
+九、实现微信的我的 My Posts 列表
+
+十、如何快速定位线上 Bug，并解决之
+
+十一、代码规范
+prettier
+
+十二、异步请求
+
+十三、LocalStorage & sessionStorage & cookie
+LocalStorage永久存在，不同页面间可以共享相同的 localStorage（页面属于相同域名和端口）
+sessionStorage关闭标签页或浏览器后被清除
+cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭 
+
+十四、文本过长显示省略号
+.title{ 
+width:300px; 设置宽度
+white-space:nowrap; 文字不换行
+overflow:hidden; 隐藏超出
+text-overflow:ellipsis; 显示省略号
+}
